@@ -1,6 +1,6 @@
 
 module.exports.config = {
-name: "sing3",
+name: "sing",
 version: "1.0.0",
 hasPermssion: 0,
 credits: "CatalizCS",//mod sing by Jukie
