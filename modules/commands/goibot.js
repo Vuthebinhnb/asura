@@ -11,11 +11,11 @@ module.exports.config = {
 };
 module.exports.handleEvent = function({ api, event }) {
   var { threadID, messageID } = event;
-  var tl = ["chào bạn tôi là bot của Đinh Văn Quý", "bae có chuyện gì buồn hả?", "dạ chồng đây", "em là nhất đó bbi", "Yêu em <3", "Hi, ckao iem nka", "yêu anh đi anh buff follow cho", "Sử dụng callad để liên lạc với admin!", "Em là bot đẹp trai nhất phây búc", "Daaaa", "em ăn cơm chưa?", "Yêu anh Cuý nhất", "làm vợ bé anh nha", "Đinh Văn Quý đẹp trai nhất meta", "réo gì lắm z má", "Sao thế công chúa", "em đang chơi game bớt réo lại ạ", "anh iu em nhiều lắm đó", "Tuyển ghệ đíc bự", "cute thế bị đin à", "cái đồ đéo có ny", "ai gọi em đó có em đây", "đẹp trai quá cũng khổ", "Em  dễ thương như chủ của em ạ", "Đừng khen em ngại quá hí hí" ,"Làm tục tưng hong bé ơi", "Đừng spam em nha :<<, cậu chủ em mệt lắm rồi", "nghèo không có tội, không có tiền mới là tội", "Dảk burh lmao", "anh biết anh đẹp trai rồi cứ khen", "mày bị cắm sừng à", "Spam nữa tao bảo qtv kick", "Yêu em không ạ?", "ĐVQ đẹp trai nhất hmt"];
+  var tl = ["chào bạn tôi là bot của Vũ Thế Bình", "bae có chuyện gì buồn hả?", "dạ chồng đây", "em là nhất đó bbi", "Yêu em <3", "Hi, ckao iem nka", "yêu anh đi anh buff follow cho", "Sử dụng callad để liên lạc với admin!", "Em là bot đẹp trai nhất phây búc", "Daaaa", "em ăn cơm chưa?", "Yêu cậu nhất", "làm vợ bé anh nha", "Vũ Thế Bình yêu tất cả các bạn", "réo gì lắm z má", "Sao thế công chúa", "em đang chơi game bớt réo lại ạ", "anh iu em nhiều lắm đó", "Tuyển ghệ đíc bự", "cute thế bị đin à", "cái đồ đéo có ny", "ai gọi em đó có em đây", "đẹp trai quá cũng khổ", "Em  dễ thương như chủ của em ạ", "Đừng khen em ngại quá hí hí" ,"Làm tục tưng hong bé ơi", "Đừng spam em nha :<<, cậu chủ em mệt lắm rồi", "nghèo không có tội, không có tiền mới là tội", "Dảk burh lmao", "anh biết anh đẹp trai rồi cứ khen", "mày bị cắm sừng à", "Spam nữa tao bảo qtv kick", "Yêu em không ạ?", "VTB đẹp trai nhất hmt"];
   var rand = tl[Math.floor(Math.random() * tl.length)]
 
   if ((event.body.toLowerCase() == "bot ngu")) {
-    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Đinh Văn Quý để được hỗ trợ\nLink fb nè: https://www.facebook.com/DVQ.MafiaInternet", threadID, () =>
+    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Vũ Thế Bình để được hỗ trợ\nLink fb nè: https://www.facebook.com/Vuthebinh.sadboi", threadID, () =>
       api.removeUserFromGroup(api.getCurrentUserID(), threadID));
   };
 
@@ -30,12 +30,12 @@ module.exports.handleEvent = function({ api, event }) {
   };
 
   if ((event.body.toLowerCase() == "bot lon")) {
-    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Đinh Văn Quý để được hỗ trợ\nLink fb nè: https://www.facebook.com/DVQ.MafiaInternet", threadID, () =>
+    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Vũ Thế Bình để được hỗ trợ\nLink fb nè: https://www.facebook.com/Vuthebinh.sadboi", threadID, () =>
       api.removeUserFromGroup(api.getCurrentUserID(), threadID));
   };
 
   if ((event.body.toLowerCase() == "bot óc chó")) {
-    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Đinh Văn Quý để được hỗ trợ\nLink fb nè: https://www.facebook.com/DVQ.MafiaInternet", threadID, () =>
+    return api.sendMessage("Thành viên đã cố ý chửi bot, do đó đã vi phạm luật bot nên bot sẽ out và muốn add lại thì xin liên hệ qua admin qua Fb: Vũ Thế Bình để được hỗ trợ\nLink fb nè: https://www.facebook.com/Vuthebinh.sadboi", threadID, () =>
       api.removeUserFromGroup(api.getCurrentUserID(), threadID));
   };
 
@@ -99,12 +99,12 @@ module.exports.handleEvent = function({ api, event }) {
     return api.sendMessage("nói thế là hư nha bé", threadID);
   };
 
-  if ((event.body.toLowerCase() == "Cuý") || (event.body.toLowerCase() == "cuý")) {
-    return api.sendMessage("Ủa gì anh Cuý đẹp trai lắm hihi <3 <3 ", threadID);
+  if ((event.body.toLowerCase() == "Bình") || (event.body.toLowerCase() == "Bình")) {
+    return api.sendMessage("Ủa gì anh Bình đẹp trai lắm hihi <3 <3 ", threadID);
   };
 
-  if ((event.body.toLowerCase() == "@Đinh Văn Quý")) {
-    return api.sendMessage("À đây là chủ em , link fb anh í nè: https://www.facebook.com/DVQ.MafiaInternet ", threadID);
+  if ((event.body.toLowerCase() == "@Vũ Thế Bình")) {
+    return api.sendMessage("À đây là chủ em , link fb anh í nè: https://www.facebook.com/Vuthebinh.sadboi ", threadID);
   };
 
   if ((event.body.toLowerCase() == "bot ơi") ||  (event.body.toLowerCase() == "bot ơi")) {
@@ -291,11 +291,11 @@ module.exports.handleEvent = function({ api, event }) {
     return api.sendMessage("có ăn có học mà mở mồm ra là văng tục", threadID);
   };
 
-  if ((event.body.toLowerCase() == "ông Quý") || (event.body.toLowerCase() == "ong Quan")) {
+  if ((event.body.toLowerCase() == "ông Bình") || (event.body.toLowerCase() == "ong Binh")) {
     return api.sendMessage("Admin em đang ngủ ạ", threadID);
   };
 
-  if ((event.body.toLowerCase() == "ôg Quý") || (event.body.toLowerCase() == "og Quan")) {
+  if ((event.body.toLowerCase() == "ôg Bình") || (event.body.toLowerCase() == "og Binh")) {
     return api.sendMessage("Admin em đang ngủ ạ", threadID);
   };
 
@@ -401,10 +401,6 @@ module.exports.handleEvent = function({ api, event }) {
 
   if ((event.body.toLowerCase() == "clmm bot lon") ||  (event.body.toLowerCase() == "clmm bot lon")) {
     return api.sendMessage("chó sủa ngoài tai, đéo care", threadID);
-  };
-
-  if ((event.body.toLowerCase() == "cc") ||  (event.body.toLowerCase() == "cc")) {
-    return api.sendMessage("có từ Cúy Cute cũng phải viết tắt nữa, ngại ghê😊", threadID);
   };
 
   if (event.body.indexOf("bot") == 0 || (event.body.indexOf("Bot") == 0)) {
